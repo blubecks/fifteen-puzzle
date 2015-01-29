@@ -80,36 +80,46 @@ public class MainActivity extends Activity {
         @Override
         public boolean onDrag(View v, DragEvent event) {
             int action = event.getAction();
+            View view = (View) event.getLocalState();
             switch (event.getAction()) {
                 case DragEvent.ACTION_DRAG_STARTED:
                     v.setBackgroundColor(Color.BLUE);
                     v.invalidate();
-                    Log.d(Constants.LOG,v.getId()+"");
                     break;
                 case DragEvent.ACTION_DRAG_ENTERED:
-                    Log.d(Constants.LOG,"ACTION_DRAG_ENTERED");
+                    if (((DropCellView) v).getStatus())
+                        Log.d(Constants.LOG,"PUOI DROPPPARE "+((DropCellView) v).getOrder());
+                    else
+                        Log.d(Constants.LOG,"NON PUOI DROPPPARE "+((DropCellView) v).getOrder());
                     v.setBackgroundDrawable(enterShape);
                     break;
                 case DragEvent.ACTION_DRAG_EXITED:
-                    Log.d(Constants.LOG,"ACTION_DRAG_EXITED");
+                    Log.d(Constants.LOG,"ACTION_DRAG_EXITED "+((DropCellView) v).getStatus());
                     v.setBackgroundDrawable(normalShape);
                     break;
                 case DragEvent.ACTION_DROP:
                     // Dropped, reassign View to ViewGroup
-                    View view = (View) event.getLocalState();
+
                     ViewGroup owner = (ViewGroup) view.getParent();
                     owner.removeView(view);
                     LinearLayout container = (LinearLayout) v;
                     container.addView(view);
+                    Log.d(Constants.LOG, ((DropCellView) v).getStatus().toString());
                     view.setVisibility(View.VISIBLE);
                     break;
                 case DragEvent.ACTION_DRAG_ENDED:
                     Log.d(Constants.LOG,"ACTION_DRAG_ENDED");
+                    if (dropEventNotHandled(event)) {
+                        view.setVisibility(View.VISIBLE);
+                    }
                     v.setBackgroundDrawable(normalShape);
                 default:
                     break;
             }
             return true;
+        }
+        private boolean dropEventNotHandled(DragEvent dragEvent) {
+            return !dragEvent.getResult();
         }
     }
 }

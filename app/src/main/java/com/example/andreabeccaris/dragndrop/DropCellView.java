@@ -4,8 +4,6 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.view.DragEvent;
-import android.view.View;
 import android.widget.LinearLayout;
 
 /**
@@ -13,14 +11,30 @@ import android.widget.LinearLayout;
  */
 public class DropCellView extends LinearLayout {
 
+    private int order;
+    private Boolean status;
+
+    public Boolean getStatus() {
+        return this.status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
+    }
+
+    public int getOrder() {
+        return this.order;
+    }
+
+    public void setOrder(int order) {
+        this.order = order;
+    }
 
     public DropCellView(Context context, AttributeSet attrs) {
         super(context, attrs);
         TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.DropCellView, 0, 0);
-        Integer i = a.getInteger(R.styleable.DropCellView_value,-1);
-        Boolean b = a.getBoolean(R.styleable.DropCellView_empty,false);
-        Log.d(Constants.LOG,i+"AAAAAAAAAAA");
-        Log.d(Constants.LOG,b.toString()+" test");
+        order = a.getInt(R.styleable.DropCellView_value,-1);
+        status = a.getBoolean(R.styleable.DropCellView_empty,false);
         a.recycle();
     }
 }

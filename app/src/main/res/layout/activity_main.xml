@@ -6,200 +6,230 @@
     android:columnCount="4"
     android:rowCount="4">
 
-    <LinearLayout
+    <com.example.andreabeccaris.dragndrop.DropCellView
         android:id="@+id/one"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_row="0"
-        android:background="@drawable/shape" >
+        android:background="@drawable/shape"
+        custom:empty="false"
+        custom:value="1">
 
         <ImageView
             android:id="@+id/myimage1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_launcher" />
-    </LinearLayout>
+    </com.example.andreabeccaris.dragndrop.DropCellView>
 
-    <LinearLayout
+    <com.example.andreabeccaris.dragndrop.DropCellView
         android:id="@+id/two"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:background="@drawable/shape" >
+        android:background="@drawable/shape"
+        custom:empty="false"
+        custom:value="2">
 
         <ImageView
             android:id="@+id/myimage2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_launcher" />
-    </LinearLayout>
+    </com.example.andreabeccaris.dragndrop.DropCellView>
 
-    <LinearLayout
+    <com.example.andreabeccaris.dragndrop.DropCellView
         android:id="@+id/three"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:background="@drawable/shape" >
+        android:background="@drawable/shape"
+        custom:empty="false"
+        custom:value="3">
 
         <ImageView
             android:id="@+id/myimage3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_launcher" />
-    </LinearLayout>
-    <LinearLayout
+    </com.example.andreabeccaris.dragndrop.DropCellView>
+    <com.example.andreabeccaris.dragndrop.DropCellView
         android:id="@+id/four"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_row="0"
-        android:background="@drawable/shape" >
+        android:background="@drawable/shape"
+        custom:empty="false"
+        custom:value="4">
 
         <ImageView
             android:id="@+id/myimage4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_launcher" />
-    </LinearLayout>
-    <LinearLayout
+    </com.example.andreabeccaris.dragndrop.DropCellView>
+    <com.example.andreabeccaris.dragndrop.DropCellView
         android:id="@+id/five"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_row="0"
-        android:background="@drawable/shape" >
+        android:background="@drawable/shape"
+        custom:empty="false"
+        custom:value="5">
 
         <ImageView
             android:id="@+id/myimage5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_launcher" />
-    </LinearLayout>
-    <LinearLayout
+    </com.example.andreabeccaris.dragndrop.DropCellView>
+    <com.example.andreabeccaris.dragndrop.DropCellView
         android:id="@+id/six"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_row="0"
-        android:background="@drawable/shape" >
+        android:background="@drawable/shape"
+        custom:empty="false"
+        custom:value="6">
 
         <ImageView
             android:id="@+id/myimage6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_launcher" />
-    </LinearLayout>
-    <LinearLayout
+    </com.example.andreabeccaris.dragndrop.DropCellView>
+    <com.example.andreabeccaris.dragndrop.DropCellView
         android:id="@+id/seven"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_row="0"
-        android:background="@drawable/shape" >
+        android:background="@drawable/shape"
+        custom:empty="false"
+        custom:value="7">
 
         <ImageView
             android:id="@+id/myimage7"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_launcher" />
-    </LinearLayout>
-    <LinearLayout
+    </com.example.andreabeccaris.dragndrop.DropCellView>
+    <com.example.andreabeccaris.dragndrop.DropCellView
         android:id="@+id/eight"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_row="0"
-        android:background="@drawable/shape" >
+        android:background="@drawable/shape"
+        custom:empty="false"
+        custom:value="8">
 
         <ImageView
             android:id="@+id/myimage8"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_launcher" />
-    </LinearLayout>
-    <LinearLayout
+    </com.example.andreabeccaris.dragndrop.DropCellView>
+    <com.example.andreabeccaris.dragndrop.DropCellView
         android:id="@+id/nine"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_row="0"
-        android:background="@drawable/shape" >
+        android:background="@drawable/shape"
+        custom:empty="false"
+        custom:value="9">
 
         <ImageView
             android:id="@+id/myimage9"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_launcher" />
-    </LinearLayout>
-    <LinearLayout
+    </com.example.andreabeccaris.dragndrop.DropCellView>
+    <com.example.andreabeccaris.dragndrop.DropCellView
         android:id="@+id/ten"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_row="0"
-        android:background="@drawable/shape" >
+        android:background="@drawable/shape"
+        custom:empty="false"
+        custom:value="10">
 
         <ImageView
             android:id="@+id/myimage10"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_launcher" />
-    </LinearLayout>
-    <LinearLayout
+    </com.example.andreabeccaris.dragndrop.DropCellView>
+    <com.example.andreabeccaris.dragndrop.DropCellView
         android:id="@+id/eleven"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_row="0"
-        android:background="@drawable/shape" >
+        android:background="@drawable/shape"
+        custom:empty="false"
+        custom:value="11">
 
         <ImageView
             android:id="@+id/myimage11"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_launcher" />
-    </LinearLayout>
-    <LinearLayout
+    </com.example.andreabeccaris.dragndrop.DropCellView>
+    <com.example.andreabeccaris.dragndrop.DropCellView
         android:id="@+id/twelve"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_row="0"
-        android:background="@drawable/shape" >
+        android:background="@drawable/shape"
+        custom:empty="false"
+        custom:value="12">
 
         <ImageView
             android:id="@+id/myimage12"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_launcher" />
-    </LinearLayout>
-    <LinearLayout
+    </com.example.andreabeccaris.dragndrop.DropCellView>
+    <com.example.andreabeccaris.dragndrop.DropCellView
         android:id="@+id/thirteen"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_row="0"
-        android:background="@drawable/shape" >
+        android:background="@drawable/shape"
+        custom:empty="false"
+        custom:value="13">
 
         <ImageView
             android:id="@+id/myimage13"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_launcher" />
-    </LinearLayout>
+    </com.example.andreabeccaris.dragndrop.DropCellView>
 
-    <LinearLayout
+    <com.example.andreabeccaris.dragndrop.DropCellView
         android:id="@+id/fourteen"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:background="@drawable/shape" >
+        android:background="@drawable/shape"
+        custom:empty="false"
+        custom:value="14">
         <ImageView
             android:id="@+id/myimage14"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_launcher" />
 
-    </LinearLayout>
-    <LinearLayout
+    </com.example.andreabeccaris.dragndrop.DropCellView>
+    <com.example.andreabeccaris.dragndrop.DropCellView
         android:id="@+id/fifteen"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:background="@drawable/shape" >
+        android:background="@drawable/shape"
+        custom:empty="false"
+        custom:value="15">
         <ImageView
             android:id="@+id/myimage15"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_launcher" />
 
-    </LinearLayout>
+    </com.example.andreabeccaris.dragndrop.DropCellView>
     <com.example.andreabeccaris.dragndrop.DropCellView
         android:id="@+id/empty"
         android:layout_width="160dp"
@@ -207,5 +237,5 @@
         android:background="@drawable/shape"
         android:orientation="horizontal"
         custom:empty="true"
-        custom:value="5"/>
+        custom:value="0"/>
 </GridLayout> 
